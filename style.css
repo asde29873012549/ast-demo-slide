@@ -1,0 +1,41 @@
+/* Global background effect for all slides */
+.slidev-layout::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/background.avif') no-repeat center center / cover;
+  filter: blur(30px) brightness(0.7);
+  z-index: -1;
+  animation: bgAnimation 7s infinite alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bgAnimation {
+  0% {
+    filter: blur(30px) brightness(0.3);
+  }
+  25% {
+    filter: blur(30px) brightness(0.7);
+  }
+  50% {
+    filter: blur(30px) brightness(0.5);
+  }
+  75% {
+    filter: blur(30px) brightness(0.2);
+  }
+  100% {
+    filter: blur(30px) brightness(0.6);
+  }
+}
+
+.slidev-layout {
+  position: relative;
+  z-index: 1;
+}
+
+.slidev-vclick-target {
+  transition: opacity 1000ms ease;
+}
