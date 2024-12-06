@@ -10,7 +10,7 @@ presenter: true
 <!-- Slide 1 -->
 <div class="text-left text-6xl font-semibold">Abstract<br>Syntax Tree</div>
 <div class="text-left text-xl mt-6">Beyond Theory</div>
-<img src="./assets/0.png" class="bg" />
+<img src="/assets/0.png" class="bg" />
 
 <style>
   .slidev-layout::before {
@@ -20,7 +20,7 @@ presenter: true
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../assets/bg.png') no-repeat center center / cover;
+    background: url('/assets/bg.png') no-repeat center center / cover;
     filter: blur(30px) brightness(0.7);
     z-index: -1;
     animation: bgAnimation 7s infinite alternate;
@@ -112,7 +112,7 @@ transition: fade-out
 <!-- Slide 4 -->
 <div v-click="1" class="text-center text-3xl font-semibold">A tree representation <br>of the syntactic structure of sourcecode</div>
 <div v-click="2" class="flex justify-center items-center -translate-x-5 translate-y-12">
-  <img src="./assets/1.png" class="w-4/5" />
+  <img src="/assets/1.png" class="w-4/5" />
 </div>
 
 ---
@@ -123,7 +123,7 @@ transition: fade-out
 <div class="content-wrapper">
 
   <div v-click="2" class="center-equation">
-    <img src="./assets/3.png" class="w-full" />
+    <img src="/assets/3.png" class="w-full" />
   </div>
 
   <div class="arrow-container" v-mark="{ at: 3, color: '#fff', type: 'strike-through' }">
@@ -133,7 +133,7 @@ transition: fade-out
   </div>
 
 
-  <img v-click="4" src="./assets/2.png" class="h-full" />
+  <img v-click="4" src="/assets/2.png" class="h-full" />
 </div>
 
 <style>
@@ -184,11 +184,11 @@ level: 3
 <!-- Slide 6 -->
 <div class="content-wrapper">
   <div class="center-equation w-1/2">
-    <img src="./assets/4-1.png" class="w-1/5"/>
-    <v-click at="1"><img src="./assets/4-2.png" class="w-1/5 mr-5"/></v-click>
-    <v-click at="4"><img src="./assets/4-3.png" class="w-1/5 scale-170"/></v-click>
-    <v-click at="7"><img src="./assets/4-4.png" class="w-1/5 translate-y-2"/></v-click>
-    <v-click at="10"><img src="./assets/4-5.png" class="w-1/5 scale-220"/></v-click>
+    <img src="/assets/4-1.png" class="w-1/5"/>
+    <v-click at="1"><img src="/assets/4-2.png" class="w-1/5 mr-5"/></v-click>
+    <v-click at="4"><img src="/assets/4-3.png" class="w-1/5 scale-170"/></v-click>
+    <v-click at="7"><img src="/assets/4-4.png" class="w-1/5 translate-y-2"/></v-click>
+    <v-click at="10"><img src="/assets/4-5.png" class="w-1/5 scale-220"/></v-click>
   </div>
 
 
@@ -283,7 +283,7 @@ level: 3
 
 <!-- Slide 7 -->
 <div class="flex justify-center items-center h-full">
-  <v-click at="1"><img src="./assets/5.png" class="h-full"/></v-click>
+  <v-click at="1"><img src="/assets/5.png" class="h-full"/></v-click>
 </div>
 
 ---
@@ -330,7 +330,7 @@ level: 4
   <div v-mark="{ at: 2, color: '#fff', type: 'strike-through' }" class="w-1/10"/>
   <div class="w-1/6 flex flex-col items-center justify-between gap-5">
     <div v-click="3" class="text-xl font-semibold ast">AST</div>
-    <img v-click="2" src="./assets/8.png"/>
+    <img v-click="2" src="/assets/8.png"/>
     <div v-click="3" class="text-xl font-semibold protocol">Protocol</div>
   </div>
   <div v-mark="{ at: 2, color: '#fff', type: 'strike-through' }" class="w-1/10"/>
@@ -367,19 +367,19 @@ level: 4
 <!-- Slide 11 -->
 <div class="grid grid-cols-4 gap-10 h-full place-items-center">
   <div class="flex flex-col items-center justify-between gap-10">
-    <v-click at="1"><img src="./assets/eslint.png" class="w-2/3"/></v-click>
+    <v-click at="1"><img src="/assets/eslint.png" class="w-2/3"/></v-click>
     <v-click at="2">
       <div class="text-center text-2xl font-semibold">Linting</div>
     </v-click>
   </div>
   <div class="flex flex-col items-center justify-between gap-10">
-    <v-click at="3"><img src="./assets/prettier.png" class="w-2/3"/></v-click>
+    <v-click at="3"><img src="/assets/prettier.png" class="w-2/3"/></v-click>
     <v-click at="4">
       <div class="text-center text-2xl font-semibold">Formatting</div>
     </v-click>
   </div>
   <div class="flex flex-col items-center justify-between gap-20">
-    <v-click at="5"><img src="./assets/babel.png"/></v-click>
+    <v-click at="5"><img src="/assets/babel.png"/></v-click>
     <v-click at="6">
       <div class="text-center text-2xl font-semibold">Transpiling</div>
     </v-click>
@@ -644,22 +644,22 @@ level: 5
 </div>
 
 <div class="flex justify-center items-center w-full h-full relative">
-  <img src="./assets/babel.png" class="w-1/5" />
+  <img src="/assets/babel.png" class="w-1/5" />
   <DrawingArrow v-click="1" class="absolute first" />
   <DrawingArrow v-click="3" class="absolute second" />
   <DrawingArrow v-click="5" class="absolute third" />
   <DrawingArrow v-click="7" class="absolute fourth" />
   <div v-click="2" class="absolute fifth">
-    <img src="./assets/6-1.png" class="w-1/3" />
+    <img src="/assets/6-1.png" class="w-1/3" />
   </div>
   <div v-click="4" class="absolute sixth">
-    <img src="./assets/6-2.png" class="w-1/3" />
+    <img src="/assets/6-2.png" class="w-1/3" />
   </div>
   <div v-click="6" class="absolute seventh">
-    <img src="./assets/6-3.png" class="w-1/3" />
+    <img src="/assets/6-3.png" class="w-1/3" />
   </div>
   <div v-click="8" class="absolute eighth">
-    <img src="./assets/6-4.png" class="w-1/3" />
+    <img src="/assets/6-4.png" class="w-1/3" />
   </div>
 </div>
 
